@@ -5,7 +5,7 @@ local Players = game:GetService("Players")
 
 MS:SubscribeAsync("Announcement", function(msg)
 	print(msg.Data)
-	RS.AnnoucementSend:FireAllClients(msg.Data) -- typo corrected
+	RS.AnnoucementSend:FireAllClients(msg.Data)
 end)
 
 MS:SubscribeAsync("ServerKick", function(requestInfo)
